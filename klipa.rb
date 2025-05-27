@@ -5,20 +5,20 @@
 class Klipa < Formula
   desc "A CLI clipboard manager for saving and retrieving text from your clipboard."
   homepage "https://github.com/Humiditii/klipa"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Humiditii/klipa/releases/download/v1.0.0/klipa_1.0.0_darwin_amd64.tar.gz"
-      sha256 "824f3e88bad06415de2fffb7fab44dadd2bb10eeaf1a88953086fad76d5ecfea"
+      url "https://github.com/Humiditii/klipa/releases/download/v1.0.1/klipa_1.0.1_darwin_amd64.tar.gz"
+      sha256 "08ac2d7af1953b5555bdaedc7ef81defe8afd9ed04d9711c64a6bf2bf0a171be"
 
       def install
         bin.install "klipa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Humiditii/klipa/releases/download/v1.0.0/klipa_1.0.0_darwin_arm64.tar.gz"
-      sha256 "e4d27e3451aa7916ba99b28ece4d7bc52e7176a8910bc8e36c5cab50228702c5"
+      url "https://github.com/Humiditii/klipa/releases/download/v1.0.1/klipa_1.0.1_darwin_arm64.tar.gz"
+      sha256 "94214b9b5b36c27cdb01fcdf3eff0252c9ff07dbce8a26f2ce147ab1e6447620"
 
       def install
         bin.install "klipa"
@@ -28,15 +28,15 @@ class Klipa < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Humiditii/klipa/releases/download/v1.0.0/klipa_1.0.0_linux_amd64.tar.gz"
-      sha256 "00fb0ab75220b6528ce3158fd13c3609e071289177127376d7793bf9cecc49cb"
+      url "https://github.com/Humiditii/klipa/releases/download/v1.0.1/klipa_1.0.1_linux_amd64.tar.gz"
+      sha256 "13a10cd6aa0881e4827818c3b20625305194035f5e5a99bd3af4b8d0a101f4b0"
       def install
         bin.install "klipa"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Humiditii/klipa/releases/download/v1.0.0/klipa_1.0.0_linux_arm64.tar.gz"
-      sha256 "46bd94be5596029889a6b3516010b8018797a099121f2fb1ad6176d0ed86890f"
+      url "https://github.com/Humiditii/klipa/releases/download/v1.0.1/klipa_1.0.1_linux_arm64.tar.gz"
+      sha256 "f06db2025376991c6bedf608a73b66d9a044ad6f71f1eea87955daf54c3cb9d6"
       def install
         bin.install "klipa"
       end
